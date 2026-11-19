@@ -259,7 +259,8 @@ def main():
 
 def write_search(out):
     """site/search.json for the hub's "Search every tool" box (STYLE 6j): names and short facts only,
-    one entry per name and kind, linking to the 2024 version when there is one (SRD first)."""
+    one entry per name and kind, linking to the 2024 version when there is one (SRD first), with u14
+    for the 2014 version."""
     items = []
     for kind, label in (("feats", "Feat"), ("species", "Species"), ("backgrounds", "Background")):
         groups = {}
@@ -273,7 +274,12 @@ def write_search(out):
                 t = f"{best.get('cat') or 'General'} feat, {eds}"
             else:
                 t = f"{label}, {eds}"
-            items.append({"n": best["name"], "t": f"{t} ({src})", "k": label, "u": "?id=" + best["id"]})
+            it = {"n": best["name"], "t": f"{t} ({src})", "k": label, "u": "?id=" + best["id"]}
+            if best["ed"] == "2024":   # u14: the 2014 version, for 2014 text in the other tools (STYLE 6j)
+                old = sorted((r for r in rows if r["ed"] == "2014"), key=lambda r: (not r["srd"], r["book"]))
+                if old:
+                    it["u14"] = "?id=" + old[0]["id"]
+            items.append(it)
     items.sort(key=lambda x: (norm(x["n"]), x["k"]))
     p = ROOT / "site" / "search.json"
     p.write_text(json.dumps({"v": 1, "items": items}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

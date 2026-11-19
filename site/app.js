@@ -529,8 +529,8 @@
       if (ev.why.length) h += '<ul class="elig-list">' + ev.why.map(function (w) { return '<li class="' + w[0] + '">' + ({ ok: '✓ ', no: '✕ ', check: '? ' })[w[0]] + esc(w[1]) + '</li>'; }).join('') + '</ul>';
     }
     if (ch) h += markBtns(r, m, true);
-    if (r.sum) h += '<p class="summary" data-dice data-links data-roll-ctx="' + esc(r.name) + '">' + esc(r.sum) + '</p>';
-    if (r.text) h += '<div class="itext" data-dice data-links data-roll-ctx="' + esc(r.name) + '">' + r.text + '</div><p class="small">Rules text: ' + esc(b.name) + ', CC BY 4.0, Wizards of the Coast LLC.</p>';
+    if (r.sum) h += '<p class="summary" data-dice data-links data-roll-ctx="' + esc(r.name) + '" data-ed="' + r.ed + '">' + esc(r.sum) + '</p>';
+    if (r.text) h += '<div class="itext" data-dice data-links data-roll-ctx="' + esc(r.name) + '" data-ed="' + r.ed + '">' + r.text + '</div><p class="small">Rules text: ' + esc(b.name) + ', CC BY 4.0, Wizards of the Coast LLC.</p>';
     else h += '<p class="note-idx">This entry is from <b>' + esc(b.name) + '</b>' + (r.page ? ', page ' + r.page : '') + '. It is not in the free System Reference Document, so only the facts and an original summary are shown here; the rules text is in the book.</p>';
     $('#dBody').innerHTML = h;
     var d = $('#detail');
