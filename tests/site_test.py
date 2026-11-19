@@ -33,8 +33,12 @@ def run(page, base, check):
 
     # search and filters are kept in the link
     go("?ed=2024&books=all&q=alert&cat=Origin")
+    try:   # failed once in about ten local runs with the list not yet filtered; give it a moment
+        page.wait_for_function("[...document.querySelectorAll('#list .card h3')].some(h => h.innerText.trim() === 'Alert')", timeout=5000)
+    except Exception:
+        pass
     names = page.locator("#list .card h3").all_inner_texts()
-    check("Alert" in names, "[feats] search + category from the link finds Alert")
+    check("Alert" in names, f"[feats] search + category from the link finds Alert (listed: {names[:5]}, url {page.url})")
     check(page.locator("#search").input_value() == "alert", "[feats] search box restored from the link")
 
     # ?id= deep link opens that entry
