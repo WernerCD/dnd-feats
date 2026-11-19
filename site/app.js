@@ -58,6 +58,19 @@
     var l = Object.assign({}, cur.links[REPO] || {}, patch);
     DndChar.setLink(ch.id, REPO, l);
     shareMarks(ch.id, l);
+    publishSheet();
+  }
+  /* the hub's Character Sheet / Party summary (character.js v1.4, STYLE.md 6e); written only when it changed */
+  function publishSheet() {
+    var ch = activeCh(); if (!ch || !DATA || !DndChar.setSheet) return;
+    var m = marks(ch), feats = [];
+    m.taken.forEach(function (id) { feats.push({ n: BYID[id].name, cat: BYID[id].cat, status: 'taken' }); });
+    m.planned.forEach(function (id) { feats.push({ n: BYID[id].name, cat: BYID[id].cat, status: 'planned' }); });
+    var sp = m.species && BYID[m.species], bg = m.background && BYID[m.background];
+    var sum = feats.length || sp || bg ? { v: 1, ed: ch.ed, feats: feats, species: sp ? sp.name : null, background: bg ? bg.name : null } : null;
+    while (sum && JSON.stringify(sum).length > 5900 && sum.feats.length) sum.feats.pop();
+    var cur = ch.sheet && ch.sheet[REPO];
+    if (JSON.stringify(cur || null) !== JSON.stringify(sum)) DndChar.setSheet(ch.id, REPO, sum);
   }
   /* what this site adds to the character's share link (character.js v1.2+) */
   function shareMarks(id, l) {
@@ -541,6 +554,7 @@
       if (!userPicked) patch.ed = ch.ed;
     }
     takeShared();
+    publishSheet();
     if ($('#detail').open) openDetail(new URL(location.href).searchParams.get('id') || '');
     update(patch);
   });
@@ -564,6 +578,7 @@
       $('main').insertBefore(n, $('main').firstChild);
     }
     takeShared();
+    publishSheet();
     render();
     if (openId && BYID[openId]) {
       var k = kindOf(openId); if (k !== state.tab || BYID[openId].ed !== state.ed) { state.tab = k; state.ed = BYID[openId].ed; render(); }
