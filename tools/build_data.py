@@ -45,6 +45,47 @@ def inline(s):
     return s
 
 
+SPELLS_FILE = ROOT / "data-src" / "spell-names.json"   # spell names from the Spell Planner's search.json (fetch_sources.py)
+_spell_rx = None
+
+
+def mark_spells(h):
+    """Wrap spell names in SRD text in <span data-link="spell"> so links.js points them at the Spell Planner
+    (STYLE 6k). The SRD prints them in plain type. Names of two or more words match anywhere; one-word names
+    only before "cantrip" or "spell", or as a whole table cell or list item, so "light" or "shield" in
+    ordinary prose stays plain. Bold run-in headings and existing tags are left alone."""
+    global _spell_rx
+    if _spell_rx is None:
+        names = json.loads(SPELLS_FILE.read_text(encoding="utf-8")) if SPELLS_FILE.exists() else []
+        multi = sorted((n for n in names if " " in n or "/" in n), key=len, reverse=True)
+        single = sorted((n for n in names if " " not in n and "/" not in n), key=len, reverse=True)
+        alt = lambda ns: "|".join(re.escape(html.escape(n, quote=False)) for n in ns) or "(?!)"
+        _spell_rx = (re.compile(r"(?<![\w'])(" + alt(multi) + r"|(?:" + alt(single) + r")(?=\s+(?:cantrip|spell)s?\b))(?![\w'])", re.I),
+                     re.compile(r"^\s*(" + alt(single) + r")\s*$", re.I))
+    rx_any, rx_whole = _spell_rx
+    wrap = lambda m: '<span data-link="spell">' + m.group(1) + "</span>"
+    out, depth_b, cell = [], 0, None
+    parts = re.split(r"(<[^>]+>)", h)
+    for i, p in enumerate(parts):
+        if p.startswith("<"):
+            tag = p.lower()
+            if tag == "<b>": depth_b += 1
+            elif tag == "</b>": depth_b = max(0, depth_b - 1)
+            out.append(p)
+            continue
+        if not p or depth_b:
+            out.append(p)
+            continue
+        prev = parts[i - 1].lower() if i else ""
+        nxt = parts[i + 1].lower() if i + 1 < len(parts) else ""
+        if prev in ("<td>", "<li>") and nxt in ("</td>", "</li>") and rx_whole.match(p):
+            out.append(rx_whole.sub(wrap, p))
+            continue
+        out.append(rx_any.sub(wrap, p))
+    # bold run-in headings ("Darkvision.", "Breath Weapon.") are trait names, not spells or items
+    return "".join(out).replace("<b><i>", "<b data-nolink><i>")
+
+
 def md(text):
     text = (text or "").replace("\xad", "").replace("\r\n", "\n").replace("\r", "\n").strip()
     if not text:
@@ -150,7 +191,7 @@ def main():
                     "ability": twin.get("ability") if twin else None,
                     "abilities": twin.get("abilities", []) if twin else [],
                     "rep": bool(twin and twin.get("repeatable")) or any("more than once" in b["desc"] for b in ben),
-                    "text": txt,
+                    "text": mark_spells(txt),
                 })
                 if slug == "ability-score-improvement":
                     row["ability"] = "+2 to one, or +1 to two (max 20)"
@@ -166,7 +207,7 @@ def main():
                     "size": twin.get("size") if twin else None, "speed": twin.get("speed") if twin else None,
                     "dv": twin.get("darkvision") if twin else None, "type": twin.get("type", "Humanoid") if twin else "Humanoid",
                     "ability": twin.get("ability") if twin else None, "abilities": twin.get("abilities", []) if twin else [],
-                    "text": txt,
+                    "text": mark_spells(txt),
                 })
             else:
                 bens = s.get("benefits") or []
@@ -178,7 +219,7 @@ def main():
                     "feat": g.get("feat") or (twin or {}).get("feat"),
                     "ability": (twin or {}).get("ability") or (g.get("ability_score") or None),
                     "abilities": (twin or {}).get("abilities") or [ABFULL[x.strip().lower()] for x in (g.get("ability_score") or "").split(",") if x.strip().lower() in ABFULL],
-                    "text": txt,
+                    "text": mark_spells(txt),
                 })
             book(src, ed, True, row["book"])
             out[kind].append(row)

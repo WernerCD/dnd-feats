@@ -9,6 +9,8 @@ Run by hand (not in CI):  python tools/fetch_sources.py
    skills, tools and the feat a background grants. No description text is kept, ever.
    Partnered / third-party products ("-alt" groups) and the free web supplements (Plane Shift and
    similar, not in the books list) are left out.
+3. The Spell Planner's search.json -> data-src/spell-names.json (names only), used by build_data.py to
+   link spell names in SRD text to the Spell Planner (STYLE 6k).
 """
 import json
 import re
@@ -402,6 +404,15 @@ def fetch_5etools():
         print(f"  5etools facts: {len(rows)} {kind} -> {out.name}")
 
 
+def fetch_spell_names():
+    d = get("https://wernercd.github.io/dnd-magic/search.json")
+    names = sorted({i["n"] for i in d.get("items", []) if i.get("k") == "Spell"})
+    out = ROOT / "data-src" / "spell-names.json"
+    out.write_text(json.dumps(names, indent=0, ensure_ascii=False), encoding="utf-8")
+    print(f"  spell names: {len(names)} -> {out.name}")
+
+
 if __name__ == "__main__":
     fetch_open5e()
     fetch_5etools()
+    fetch_spell_names()
