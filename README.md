@@ -53,6 +53,8 @@ Nothing is taken from D&D Beyond. Partnered and third-party products and the fre
 | `tools/build_data.py` | Builds the data from `source/` and `data-src/` (offline) |
 | `tools/fetch_sources.py` | Refreshes `source/` from Open5e and `data-src/other-*.json` from 5etools (run by hand) |
 | `tools/check_site.py` | Shared toolbox smoke check, run by CI before deploy |
+| `tools/smoke_test.py` | Shared Playwright browser tests, run by CI before deploy |
+| `tests/site_test.py` | This site's browser checks (tabs, sources, deep links, character marks, imports) |
 | `source/` | Raw Open5e exports (SRD 5.1 and 5.2, CC-BY-4.0) |
 | `data-src/other-*.json` | Facts-only index of the official books |
 | `data-src/summaries.json` | Original one-line summaries, keyed by entry id |
@@ -63,7 +65,7 @@ python tools/fetch_sources.py   # only to refresh the inputs
 python tools/build_data.py
 python -m http.server 8765 --directory site
 ```
-Checks (CI runs the same before every deploy): `python tools/check_site.py`. Every push to `main` deploys to GitHub Pages via `.github/workflows/pages.yml`.
+Checks (CI runs the same before every deploy): `python tools/check_site.py` and the browser smoke tests `python tools/smoke_test.py` (shared suite plus this site's `tests/site_test.py`; needs `pip install playwright` and `python -m playwright install chromium`). Every push to `main` deploys to GitHub Pages via `.github/workflows/pages.yml`.
 
 ## Credits and license
 - Code: MIT, see [LICENSE](LICENSE).
