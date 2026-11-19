@@ -352,7 +352,7 @@
   }
 
   /* ---------- imported characters (character.js v1.6 ch.imp, STYLE.md 6g) ---------- */
-  var IMP_SRC = { ddb: 'D&D Beyond', foundry: 'Foundry VTT', fc5: 'Fight Club 5' };
+  var IMP_SRC = { ddb: 'D&D Beyond', foundry: 'Foundry VTT', fc5: 'Fight Club 5', dicecloud: 'DiceCloud' };
   var impDone = null;   /* { id, text } after an import was applied or dismissed, until the user closes the note */
   function impSrc(imp) { return IMP_SRC[imp.src] || 'another tool'; }
   function toks(s) { return norm(s).split(' ').filter(Boolean).sort().join(' '); }
