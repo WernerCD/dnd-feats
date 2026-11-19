@@ -213,6 +213,30 @@ def main():
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"feats.json: {len(out['feats'])} feats, {len(out['species'])} species, {len(out['backgrounds'])} backgrounds, "
           f"{len(out['books'])} books; {missing} index rows without a summary; {OUT.stat().st_size // 1024} KB")
+    write_search(out)
+
+
+def write_search(out):
+    """site/search.json for the hub's "Search every tool" box (STYLE 6j): names and short facts only,
+    one entry per name and kind, linking to the 2024 version when there is one (SRD first)."""
+    items = []
+    for kind, label in (("feats", "Feat"), ("species", "Species"), ("backgrounds", "Background")):
+        groups = {}
+        for r in out[kind]:
+            groups.setdefault(norm(r["name"]), []).append(r)
+        for rows in groups.values():
+            best = sorted(rows, key=lambda r: (r["ed"] != "2024", not r["srd"], r["book"]))[0]
+            eds = " and ".join(sorted({r["ed"] for r in rows}))
+            src = "SRD" if best["srd"] else best["book"]
+            if kind == "feats":
+                t = f"{best.get('cat') or 'General'} feat, {eds}"
+            else:
+                t = f"{label}, {eds}"
+            items.append({"n": best["name"], "t": f"{t} ({src})", "k": label, "u": "?id=" + best["id"]})
+    items.sort(key=lambda x: (norm(x["n"]), x["k"]))
+    p = ROOT / "site" / "search.json"
+    p.write_text(json.dumps({"v": 1, "items": items}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"search.json: {len(items)} entries, {p.stat().st_size // 1024} KB")
 
 
 if __name__ == "__main__":

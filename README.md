@@ -50,6 +50,9 @@ Nothing is taken from D&D Beyond. Partnered and third-party products and the fre
 |---|---|
 | `site/` | The static site (HTML/CSS/JS, no build step) |
 | `site/data/feats.json` | Generated data, rebuilt by CI on every push |
+| `site/search.json` | Names and `?id=` links for the hub's "Search every tool" box, generated with the data |
+| `site/sw.js`, `site/offline.js`, `site/offline.json` | Shared offline support; `offline.json` lists the data file to save |
+| `site/icons/`, `site/og.png`, `site/manifest.webmanifest` | App icons and link preview, copied from the hub's `shared/images/dnd-feats/` |
 | `tools/build_data.py` | Builds the data from `source/` and `data-src/` (offline) |
 | `tools/fetch_sources.py` | Refreshes `source/` from Open5e and `data-src/other-*.json` from 5etools (run by hand) |
 | `tools/check_site.py` | Shared toolbox smoke check, run by CI before deploy |
