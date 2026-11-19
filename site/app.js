@@ -29,7 +29,7 @@
     cats: list(params.get('cat')),
     pre: params.get('pre') || '',
     abs: list(params.get('ab')),
-    books: params.get('books') ? (params.get('books') === 'srd' ? 'srd' : list(params.get('books'))) : null, /* null = every book */
+    books: (function (b) { return !b ? null : b === 'srd' || b === 'all' ? b : b === 'none' ? [] : list(b); })(params.get('books')), /* null = the core books of the current list (STYLE 6f) */
     rep: params.get('rep') === '1',
     show: params.get('show') || '',
     at: parseInt(params.get('at'), 10) || 0,
@@ -190,7 +190,28 @@
 
   /* ---------- filtering ---------- */
   function rows() { return DATA ? DATA[state.tab].filter(function (r) { return r.ed === state.ed; }) : []; }
-  function bookOn(code) { return state.books === null ? true : state.books === 'srd' ? /^SRD/.test(code) : state.books.indexOf(code) >= 0; }
+  /* books that have entries in the current tab and edition, in picker order (shared sources.js) */
+  function listCodes() {
+    var seen = {};
+    rows().forEach(function (r) { seen[r.book] = 1; });
+    var codes = Object.keys(seen);
+    return window.DndSources ? DndSources.sort(codes) : codes.sort();
+  }
+  function coreCodes() { var c = listCodes(); return window.DndSources ? DndSources.defaults(c) : c; }
+  function bookOn(code) {
+    var b = state.books;
+    if (b === null) return coreCodes().indexOf(code) >= 0;
+    if (b === 'all') return true;
+    if (b === 'srd') return /^SRD/.test(code);
+    return b.indexOf(code) >= 0;
+  }
+  /* an explicit list that equals the default or every book collapses back to null / 'all' */
+  function tidyBooks(on) {
+    var core = coreCodes().slice().sort().join('|'), all = listCodes();
+    if (on.slice().sort().join('|') === core) return null;
+    if (on.length === all.length) return 'all';
+    return on;
+  }
   function preKind(f) {
     var k = {};
     (f.pre || []).forEach(function (a) {
@@ -307,6 +328,7 @@
     $('#atLvl').value = state.at || ''; $('#atLvl').placeholder = ch ? String(DndChar.level(ch)) : '';
     renderPickers();
     renderCharCard(ch, m);
+    renderImport(ch, m);
     var all = rows().length;
     $('#count').textContent = rs.length + ' ' + (rs.length === 1 ? TABS[state.tab].replace(/s$/, '').replace('Specie', 'Species') : TABS[state.tab].toLowerCase()) + (rs.length !== all ? ' of ' + all : '') + ' · ' + state.ed + ' rules';
     $('#list').innerHTML = rs.map(function (r) { return card(r, ch, m); }).join('');
@@ -329,6 +351,77 @@
     el.innerHTML = h;
   }
 
+  /* ---------- imported characters (character.js v1.6 ch.imp, STYLE.md 6g) ---------- */
+  var IMP_SRC = { ddb: 'D&D Beyond', foundry: 'Foundry VTT', fc5: 'Fight Club 5' };
+  var impDone = null;   /* { id, text } after an import was applied or dismissed, until the user closes the note */
+  function impSrc(imp) { return IMP_SRC[imp.src] || 'another tool'; }
+  function toks(s) { return norm(s).split(' ').filter(Boolean).sort().join(' '); }
+  /* name -> entry in this edition: exact, then the same words in any order ("High Elf" = "Elf (High)"), then without a (choice) */
+  function matchName(kind, ed, name) {
+    var pool = DATA[kind].filter(function (r) { return r.ed === ed; });
+    var n = norm(name), t = toks(name), base = norm(String(name).replace(/\s*\(.*?\)\s*/g, ' '));
+    var srdFirst = function (a) { return a.sort(function (x, y) { return (y.srd ? 1 : 0) - (x.srd ? 1 : 0); })[0]; };
+    return srdFirst(pool.filter(function (r) { return norm(r.name) === n; })) ||
+      srdFirst(pool.filter(function (r) { return toks(r.name) === t; })) ||
+      (base && base !== n ? srdFirst(pool.filter(function (r) { return norm(r.name) === base; })) : null) ||
+      (kind === 'species' && !/half/.test(n) ? srdFirst(pool.filter(function (r) { return !r.parent && n.split(' ').indexOf(norm(r.name)) > 0; })) : null) || null;   /* "Wood Elf" -> Elf (2024 lineages) */
+  }
+  function impTime(x) { var t = Date.parse(x || ''); return isNaN(t) ? 0 : t; }
+  function impPlan(ch) {
+    var imp = ch && ch.imp;
+    if (!imp || !imp.at || !DATA) return null;
+    var l = ch.links[REPO] || {};
+    if (l.impAt && impTime(l.impAt) >= impTime(imp.at)) return null;
+    var ed = imp.ed === '2014' || imp.ed === '2024' ? imp.ed : ch.ed, plan = { imp: imp, ed: ed, feats: [], miss: [], species: null, background: null };
+    (Array.isArray(imp.feats) ? imp.feats : []).forEach(function (nm) {
+      var f = matchName('feats', ed, nm);
+      if (f) { if (plan.feats.indexOf(f.id) < 0) plan.feats.push(f.id); } else plan.miss.push('feat "' + nm + '"');
+    });
+    ['species', 'background'].forEach(function (k) {
+      if (!imp[k]) return;
+      var r = matchName(k === 'species' ? 'species' : 'backgrounds', ed, imp[k]);
+      if (r) plan[k] = r.id; else plan.miss.push(k + ' "' + imp[k] + '"');
+    });
+    return plan;
+  }
+  function renderImport(ch, m) {
+    var el = $('#impCard'), h = '';
+    if (impDone && ch && impDone.id === ch.id) {
+      h = '<p>' + esc(impDone.text) + '</p><div class="dlg-marks"><button type="button" class="btn" id="impClose">OK</button></div>';
+    } else {
+      impDone = null;
+      var plan = ch ? impPlan(ch) : null;
+      if (!plan) { el.hidden = true; el.innerHTML = ''; return; }
+      var src = impSrc(plan.imp), when = plan.imp.at.slice(0, 10);
+      h = '<h2>Imported from ' + esc(src) + '</h2><p class="small">' + esc(ch.name) + ' was imported on ' + esc(when) + ' (' + esc(plan.ed) + ' rules). Nothing changes here until you choose.</p><ul>';
+      var newF = plan.feats.filter(function (id) { return m.taken.indexOf(id) < 0; });
+      h += '<li>Feats to mark Taken: ' + (newF.length ? newF.map(function (id) { return esc(BYID[id].name); }).join(', ') : '<span class="muted">none new</span>') + (m.taken.length ? ' <span class="small">(feats already marked here stay)</span>' : '') + '</li>';
+      ['species', 'background'].forEach(function (k) {
+        if (!plan[k]) return;
+        var cur = m[k] && BYID[m[k]];
+        h += '<li>' + cap(k) + ': ' + esc(BYID[plan[k]].name) + (cur && cur.id !== plan[k] ? ' <span class="small">(replaces ' + esc(cur.name) + ')</span>' : '') + '</li>';
+      });
+      if (plan.miss.length) h += '<li class="warn-txt">Not found on this site: ' + esc(plan.miss.join(', ')) + '</li>';
+      h += '</ul><div class="dlg-marks"><button type="button" class="btn" id="impUse" aria-pressed="false">Use the feats, species and background imported from ' + esc(src) + '</button><button type="button" class="btn" id="impSkip">Not now</button></div>';
+    }
+    el.hidden = false;
+    el.innerHTML = h;
+  }
+  function applyImport(use) {
+    var ch = activeCh(), plan = ch && impPlan(ch); if (!plan) return;
+    var m = marks(ch), patch = { impAt: plan.imp.at }, src = impSrc(plan.imp);
+    if (use) {
+      patch.taken = m.taken.concat(plan.feats.filter(function (id) { return m.taken.indexOf(id) < 0; }));
+      patch.planned = m.planned.filter(function (id) { return plan.feats.indexOf(id) < 0; });
+      if (plan.species) patch.species = plan.species;
+      if (plan.background) patch.background = plan.background;
+    }
+    impDone = { id: ch.id, text: use ? 'Used the import from ' + src + '.' + (plan.miss.length ? ' Not found on this site, so not added: ' + plan.miss.join(', ') + '.' : ' Everything matched.') : 'Skipped the import from ' + src + '. It will be offered again if the character is imported again.' };
+    setMarks(patch);
+    render();
+    var b = $('#impClose'); if (b) b.focus();
+  }
+
   /* ---------- filter menus ---------- */
   function renderPickers() {
     var rs = rows();
@@ -348,14 +441,16 @@
     sumLabel('#abPick', '#abSum', 'Ability score', state.abs.map(function (a) { return a.toUpperCase(); }));
     $('#abHint').textContent = state.tab === 'backgrounds' && state.ed === '2014' ? '2014 backgrounds give no ability increase.' : 'Shows entries that can raise any ticked score.';
     /* sources */
-    var books = DATA.books.filter(function (b) { return b.n[state.ed] && rs.some(function (r) { return r.book === b.code; }); });
-    var q = norm(state.srcQ);
+    var books = listCodes().map(function (c) { return BOOK[c]; });
+    var q = norm(state.srcQ), grp = '';
     $('#srcList').innerHTML = books.filter(function (b) { return !q || norm(b.name).indexOf(q) >= 0; }).map(function (b) {
-      var n = rs.filter(function (r) { return r.book === b.code; }).length;
-      return '<label class="srcrow"><input type="checkbox" data-src="' + esc(b.code) + '"' + (bookOn(b.code) ? ' checked' : '') + '><span class="dot" style="--h:' + b.hue + '"></span><span>' + esc(b.name) + '</span><span class="n">' + n + '</span></label>';
+      var n = rs.filter(function (r) { return r.book === b.code; }).length, h = '';
+      var g = window.DndSources ? DndSources.info(b.code).groupName : '';
+      if (g && g !== grp) { grp = g; h += '<div class="src-group">' + esc(g) + '</div>'; }
+      return h + '<label class="srcrow"><input type="checkbox" data-src="' + esc(b.code) + '"' + (bookOn(b.code) ? ' checked' : '') + '><span class="dot" style="--h:' + b.hue + '"></span><span>' + esc(b.name) + '</span><span class="n">' + n + '</span></label>';
     }).join('') || '<p class="small">No book matches.</p>';
     var on = books.filter(function (b) { return bookOn(b.code); });
-    var lbl = state.books === null ? 'Sources' : state.books === 'srd' ? 'Sources: SRD only' : 'Sources: ' + on.length + ' of ' + books.length;
+    var lbl = state.books === null ? 'Sources: core books' : state.books === 'srd' ? 'Sources: SRD only' : state.books === 'all' ? 'Sources: all books' : 'Sources: ' + on.length + ' of ' + books.length;
     $('#srcSum').textContent = lbl;
     $('#srcPick').classList.toggle('filtered', state.books !== null);
   }
@@ -374,7 +469,7 @@
     setP('cat', state.cats.join('|'));
     setP('pre', state.pre);
     setP('ab', state.abs.join('|'));
-    setP('books', state.books === null ? '' : state.books === 'srd' ? 'srd' : state.books.join('|') || 'none');
+    setP('books', state.books === null ? '' : typeof state.books === 'string' ? state.books : state.books.join('|') || 'none');
     setP('rep', state.rep && '1');
     setP('show', state.show);
     setP('at', state.at && String(state.at));
@@ -455,8 +550,10 @@
 
   /* ---------- events ---------- */
   document.addEventListener('click', function (ev) {
-    var t = ev.target.closest('[data-open],[data-mark],[data-set],#atClear');
+    var t = ev.target.closest('[data-open],[data-mark],[data-set],#atClear,#impUse,#impSkip,#impClose');
     if (t && t.id === 'atClear') return update({ at: 0 });
+    if (t && (t.id === 'impUse' || t.id === 'impSkip')) return applyImport(t.id === 'impUse');
+    if (t && t.id === 'impClose') { impDone = null; render(); var s0 = $('#search'); if (s0) s0.focus(); return; }
     if (t && t.dataset.open && !ev.ctrlKey && !ev.metaKey && !ev.shiftKey) { ev.preventDefault(); openDetail(t.dataset.open, $('#detail').open ? null : t); return; }
     if (t && t.dataset.mark) { toggleMark(t.dataset.mark, t.dataset.id); return afterMark(t); }
     if (t && t.dataset.set) {
@@ -473,15 +570,15 @@
     if (inDlg) openDetail(btn.dataset.id); else render();
     var n = document.querySelector((inDlg ? '#dBody ' : '#list ') + sel); if (n) n.focus();
   }
-  $$('.seg [data-ed]').forEach(function (b) { b.addEventListener('click', function () { update({ ed: b.dataset.ed, books: state.books === 'srd' ? 'srd' : null }); }); });
+  $$('.seg [data-ed]').forEach(function (b) { b.addEventListener('click', function () { update({ ed: b.dataset.ed, books: keepBooks() }); }); });
   $$('.tabs [data-tab]').forEach(function (b) {
-    b.addEventListener('click', function () { update({ tab: b.dataset.tab, books: state.books === 'srd' ? 'srd' : null }); });
+    b.addEventListener('click', function () { update({ tab: b.dataset.tab, books: keepBooks() }); });
     b.addEventListener('keydown', function (e) {
       var keys = Object.keys(TABS), i = keys.indexOf(state.tab);
       if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
         e.preventDefault();
         var n = keys[(i + (e.key === 'ArrowRight' ? 1 : keys.length - 1)) % keys.length];
-        update({ tab: n, books: state.books === 'srd' ? 'srd' : null }, '#tab-' + n);
+        update({ tab: n, books: keepBooks() }, '#tab-' + n);
       }
     });
   });
@@ -502,15 +599,17 @@
     var a = state.abs.filter(function (x) { return x !== c; }); if (e.target.checked) a.push(c);
     update({ abs: AB.filter(function (x) { return a.indexOf(x) >= 0; }) }, '#abList [data-ab="' + c + '"]');
   });
-  function codesNow() { return DATA.books.filter(function (b) { return b.n[state.ed]; }).map(function (b) { return b.code; }); }
+  /* switching edition or tab: SRD-only and all-books carry over; anything else goes back to the core books of the new list */
+  function keepBooks() { return state.books === 'srd' || state.books === 'all' ? state.books : null; }
   $('#srcList').addEventListener('change', function (e) {
     var c = e.target.dataset.src; if (!c) return;
-    var on = codesNow().filter(bookOn).filter(function (x) { return x !== c; }); if (e.target.checked) on.push(c);
-    update({ books: on.length === codesNow().length ? null : on }, '#srcList [data-src="' + c + '"]');
+    var on = listCodes().filter(bookOn).filter(function (x) { return x !== c; }); if (e.target.checked) on.push(c);
+    update({ books: tidyBooks(on) }, '#srcList [data-src="' + c + '"]');
   });
   $('#srcQ').addEventListener('input', function () { state.srcQ = this.value; renderPickers(); });
   $('#srcSrd').addEventListener('click', function () { update({ books: 'srd' }); });
-  $('#srcAll').addEventListener('click', function () { update({ books: null }); });
+  $('#srcCore').addEventListener('click', function () { update({ books: null }); });
+  $('#srcAll').addEventListener('click', function () { update({ books: 'all' }); });
   $('#srcNone').addEventListener('click', function () { update({ books: [] }); });
   $('#catClear').addEventListener('click', function () { update({ cats: [] }); });
   $('#abClear').addEventListener('click', function () { update({ abs: [] }); });
@@ -536,7 +635,7 @@
   });
 
   /* the character changed (header picker, another site, another tab) */
-  function chSig(ch) { return ch ? [ch.id, ch.ed, JSON.stringify(ch.classes), ch.ab.join(','), JSON.stringify(ch.links[REPO] || {})].join('|') : ''; }
+  function chSig(ch) { return ch ? [ch.id, ch.ed, JSON.stringify(ch.classes), ch.ab.join(','), JSON.stringify(ch.links[REPO] || {}), ch.imp && ch.imp.at || ''].join('|') : ''; }
   var appliedSig = chSig(activeCh()), appliedId = activeCh() ? activeCh().id : '', appliedEd = activeCh() ? activeCh().ed : null;
   if (window.DndChar) DndChar.onChange(function (ch) {
     if (!DATA) return;
@@ -565,6 +664,7 @@
     d.books.forEach(function (b) { BOOK[b.code] = b; });
     ['feats', 'species', 'backgrounds'].forEach(function (k) { d[k].forEach(function (r) { BYID[r.id] = r; }); });
     if (Array.isArray(state.books)) state.books = state.books.filter(function (c) { return BOOK[c]; });
+    if (window.DndSources) d.books = DndSources.sort(d.books.map(function (b) { return b.code; })).map(function (c) { return BOOK[c]; });
     $('#generated').textContent = 'Data built ' + d.generated + ': ' + d.feats.length + ' feats, ' + d.species.length + ' species and ' + d.backgrounds.length + ' backgrounds across both editions.';
     $('#srcLinks').innerHTML = d.books.map(function (b) {
       var n = []; if (b.n['2014']) n.push(b.n['2014'] + ' (2014)'); if (b.n['2024']) n.push(b.n['2024'] + ' (2024)');

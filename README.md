@@ -6,10 +6,11 @@ Browse D&D 5e feats, species (races) and backgrounds for the **2014** and **2024
 
 ## Features
 - Pick the rules edition (2014 or 2024) and a tab: **Feats**, **Species** or **Backgrounds**. Search names, summaries and rules text.
-- Filters: feat category (Origin, General, Fighting Style, Epic Boon, Dragonmark, Dark Gift, Racial), kind of prerequisite, the ability score an entry can raise, a searchable **Sources** picker (SRD only / Select all / Clear all) and repeatable feats.
+- Filters: feat category (Origin, General, Fighting Style, Epic Boon, Dragonmark, Dark Gift, Racial), kind of prerequisite, the ability score an entry can raise, a searchable **Sources** picker (shared `sources.js`: core rules first and ticked by default, other books grouped below; Core books / Select all / Clear all / SRD only) and repeatable feats.
 - Full SRD text for the SRD's feats, species and backgrounds. Everything else in the official books is listed with its facts (book, page, category, prerequisite, ability increase, size and speed, skills, tools, granted feat) and an original one-line summary.
 - **Characters** (shared with the other D&D Toolbox tools through `character.js`): each feat card shows whether the active character **Qualifies**, is **Not yet** there, or needs a **Check** (campaign, background feature, tool proficiency and other things the character record doesn't hold). Checked: level, class level, ability scores, spellcasting, Fighting Style, armor and weapon training from class, feats already taken, species and background.
 - Mark feats **Taken** or **Planned**, and set the character's **species** and **background**. Stored in the shared `dnd.characters` record under `links['dnd-feats']` as `{ taken: [ids], planned: [ids], species: id, background: id }`, and carried by the character's share link. A summary `{v: 1, ed, feats: [{n, cat, status}], species, background}` is published with `DndChar.setSheet` for the hub's Character Sheet and Party pages.
+- **Imported characters** (`ch.imp`, character.js v1.6): offers to use the feats, species and background imported from D&D Beyond, Foundry or Fight Club 5, matched by name per edition, listing anything it couldn't match; saves `impAt` in `links['dnd-feats']`.
 - **At level** checks prerequisites as if the character were a later level (the extra levels go to its first class), for planning an ASI.
 - The link keeps every setting, and **Copy link** copies it (with `?char=` when a character is active).
 
@@ -22,7 +23,7 @@ Browse D&D 5e feats, species (races) and backgrounds for the **2014** and **2024
 | `cat=Origin\|General` | Feat categories, `\|`-separated |
 | `pre=none\|level\|ability\|species\|cast\|feat\|class\|campaign` | Kind of prerequisite |
 | `ab=str\|dex` | Ability scores an entry can raise |
-| `books=srd` or `books=PHB\|XPHB` | Source books (5etools codes, `SRD51`, `SRD52`) |
+| `books=srd`, `books=all` or `books=PHB\|XPHB` | Source books (5etools codes, `SRD51`, `SRD52`); left out when it's the default (core rules) |
 | `rep=1` | Repeatable feats only |
 | `show=ok\|taken\|planned\|mine` | With a character: qualifies / taken / planned / either |
 | `at=8` | Check prerequisites at this character level |

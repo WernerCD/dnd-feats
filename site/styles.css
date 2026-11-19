@@ -410,6 +410,8 @@ a.open:focus { outline: none; }
   .card.not-ok { opacity: 1; }
   .elig { border: 1px solid #999; background: none !important; color: #000 !important; }
 }
+.src-group { font-size: .72rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); border-top: 1px solid var(--line); margin-top: 6px; padding-top: 8px; }
+.src-group:first-child { border-top: 0; margin-top: 0; padding-top: 2px; }
 /* === dnd-shared v1.8 (canonical copy: WernerCD/dnd shared/dnd-shared.css) === */
 /* Paste this block unchanged at the END of each site's styles.css. Do not edit it per site;
    change it in the hub repo and re-copy it to every site. It relies on the shared tokens

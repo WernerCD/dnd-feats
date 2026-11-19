@@ -97,7 +97,7 @@
       <summary id="srcSum">Sources</summary>
       <div class="srcpop">
         <input type="search" id="srcQ" placeholder="Find a book..." aria-label="Filter sources">
-        <div class="srcbtns"><button type="button" id="srcSrd">SRD only</button><button type="button" id="srcAll">Select all</button><button type="button" id="srcNone">Clear all</button></div>
+        <div class="srcbtns"><button type="button" id="srcCore">Core books</button><button type="button" id="srcAll">Select all</button><button type="button" id="srcNone">Clear all</button><button type="button" id="srcSrd">SRD only</button></div>
         <div id="srcList" class="srclist"></div>
       </div>
     </details>
@@ -117,6 +117,7 @@
 
 <main class="wrap">
   <section class="char-card ch-only" id="charCard" aria-live="polite" hidden></section>
+  <section class="char-card imp-card" id="impCard" aria-live="polite" hidden></section>
 
   <section class="results">
     <div class="results-head">
@@ -146,7 +147,7 @@
 
   <section class="about" id="sources" data-reveal>
     <h2>Source material</h2>
-    <p class="muted">Every book the entries on this site come from, with counts per rules edition. The SRDs are free; the others are official books.</p>
+    <p class="muted">Every book the entries on this site come from, with counts per rules edition. The SRDs are free; the others are official books. The Sources menu starts with the core rules ticked; every other book is one tick away.</p>
     <ul id="srcLinks" class="srclinks"></ul>
     <p class="small muted">The free rules: <a href="https://www.dndbeyond.com/sources/dnd/basic-rules-2014" rel="noopener">Basic Rules (2014)</a> and <a href="https://www.dndbeyond.com/sources/dnd/br-2024" rel="noopener">Free Rules (2024)</a>.</p>
   </section>
@@ -181,6 +182,7 @@
 </dialog>
 
 <script src="character.js?v=dev"></script>
+<script src="sources.js?v=dev"></script>
 <script src="app.js?v=dev"></script>
 <script src="theme.js?v=dev"></script>
 <script src="version.js?v=dev"></script>
