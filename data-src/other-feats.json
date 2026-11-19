@@ -1,0 +1,6923 @@
+[
+ {
+  "id": "au_abjuration-adept",
+  "name": "Abjuration Adept",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 28,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_arcane-artist",
+  "name": "Arcane Artist",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 26,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "au_arcane-eloquence",
+  "name": "Arcane Eloquence",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 26,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "au_arcane-infiltrator",
+  "name": "Arcane Infiltrator",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 26,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "au_arcane-omens",
+  "name": "Arcane Omens",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 27,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "au_arcane-overload",
+  "name": "Arcane Overload",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 27,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "au_arcane-safeguard",
+  "name": "Arcane Safeguard",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 27,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "au_arcane-undertaker",
+  "name": "Arcane Undertaker",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 27,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "au_arcane-warrior",
+  "name": "Arcane Warrior",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 33,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Fighting Style feature",
+  "pre": [
+   {
+    "feature": [
+     "fighting style"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "au_boon-of-erupting-spellpower",
+  "name": "Boon of Erupting Spellpower",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 33,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 19,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_boon-of-magic-school-mastery",
+  "name": "Boon of Magic School Mastery",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 33,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 19,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": true
+ },
+ {
+  "id": "au_boon-of-the-iron-mind",
+  "name": "Boon of the Iron Mind",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 33,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_conjuration-adept",
+  "name": "Conjuration Adept",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 28,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_divination-adept",
+  "name": "Divination Adept",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 29,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_elemental-familiar",
+  "name": "Elemental Familiar",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 29,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Familiar Friend feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "familiar-friend"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_enchantment-adept",
+  "name": "Enchantment Adept",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 30,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_evocation-adept",
+  "name": "Evocation Adept",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 30,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_familiar-friend",
+  "name": "Familiar Friend",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 27,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "au_illusion-adept",
+  "name": "Illusion Adept",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 30,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_magic-connoisseur",
+  "name": "Magic Connoisseur",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 31,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Magic Initiate feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "magic-initiate"
+    ]
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_necromancy-adept",
+  "name": "Necromancy Adept",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 31,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_otherworldly-familiar",
+  "name": "Otherworldly Familiar",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 31,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Familiar Friend feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "familiar-friend"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_portal-jumper",
+  "name": "Portal Jumper",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 27,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "au_soothing-familiar",
+  "name": "Soothing Familiar",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 31,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Familiar Friend feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "familiar-friend"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_spell-resistant",
+  "name": "Spell Resistant",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 31,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Dex or Con +1",
+  "abilities": [
+   "dex",
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_spell-subterfuge",
+  "name": "Spell Subterfuge",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 32,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_transmutation-adept",
+  "name": "Transmutation Adept",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 32,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "au_transmuted-anatomy",
+  "name": "Transmuted Anatomy",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 28,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "au_warlike-familiar",
+  "name": "Warlike Familiar",
+  "source": "AU",
+  "sourceName": "Arcana Unleashed",
+  "page": 33,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Familiar Friend feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "familiar-friend"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "bgg_ember-of-the-fire-giant",
+  "name": "Ember of the Fire Giant",
+  "source": "BGG",
+  "sourceName": "Bigby Presents: Glory of the Giants",
+  "page": 17,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strike of the Giants (fire Strike) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "strike-of-the-giants-fire-strike"
+    ]
+   }
+  ],
+  "ability": "Str or Con or Wis +1",
+  "abilities": [
+   "str",
+   "con",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "bgg_fury-of-the-frost-giant",
+  "name": "Fury of the Frost Giant",
+  "source": "BGG",
+  "sourceName": "Bigby Presents: Glory of the Giants",
+  "page": 17,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strike of the Giants (frost Strike) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "strike-of-the-giants-frost-strike"
+    ]
+   }
+  ],
+  "ability": "Str or Con or Wis +1",
+  "abilities": [
+   "str",
+   "con",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "bgg_guile-of-the-cloud-giant",
+  "name": "Guile of the Cloud Giant",
+  "source": "BGG",
+  "sourceName": "Bigby Presents: Glory of the Giants",
+  "page": 18,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strike of the Giants (cloud Strike) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "strike-of-the-giants-cloud-strike"
+    ]
+   }
+  ],
+  "ability": "Str or Con or Cha +1",
+  "abilities": [
+   "str",
+   "con",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "bgg_keenness-of-the-stone-giant",
+  "name": "Keenness of the Stone Giant",
+  "source": "BGG",
+  "sourceName": "Bigby Presents: Glory of the Giants",
+  "page": 18,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strike of the Giants (stone Strike) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "strike-of-the-giants-stone-strike"
+    ]
+   }
+  ],
+  "ability": "Str or Con or Wis +1",
+  "abilities": [
+   "str",
+   "con",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "bgg_rune-shaper",
+  "name": "Rune Shaper",
+  "source": "BGG",
+  "sourceName": "Bigby Presents: Glory of the Giants",
+  "page": 18,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Spellcasting or Pact Magic feature or Rune Carver background",
+  "pre": [
+   {
+    "cast": 2
+   },
+   {
+    "background": [
+     "rune carver"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "bgg_soul-of-the-storm-giant",
+  "name": "Soul of the Storm Giant",
+  "source": "BGG",
+  "sourceName": "Bigby Presents: Glory of the Giants",
+  "page": 19,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strike of the Giants (storm Strike) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "strike-of-the-giants-storm-strike"
+    ]
+   }
+  ],
+  "ability": "Str or Wis or Cha +1",
+  "abilities": [
+   "str",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "bgg_strike-of-the-giants",
+  "name": "Strike of the Giants",
+  "source": "BGG",
+  "sourceName": "Bigby Presents: Glory of the Giants",
+  "page": 19,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Martial weapon proficiency or Giant Foundling background",
+  "pre": [
+   {
+    "weapon": "martial"
+   },
+   {
+    "background": [
+     "giant foundling"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "bgg_vigor-of-the-hill-giant",
+  "name": "Vigor of the Hill Giant",
+  "source": "BGG",
+  "sourceName": "Bigby Presents: Glory of the Giants",
+  "page": 19,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strike of the Giants (hill Strike) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "strike-of-the-giants-hill-strike"
+    ]
+   }
+  ],
+  "ability": "Str or Con or Wis +1",
+  "abilities": [
+   "str",
+   "con",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "dsotdq_adept-of-the-black-robes",
+  "name": "Adept of the Black Robes",
+  "source": "DSotDQ",
+  "sourceName": "Dragonlance: Shadow of the Dragon Queen",
+  "page": 31,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Initiate of High Sorcery (nuitari) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "initiate-of-high-sorcery-nuitari"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "dsotdq_adept-of-the-red-robes",
+  "name": "Adept of the Red Robes",
+  "source": "DSotDQ",
+  "sourceName": "Dragonlance: Shadow of the Dragon Queen",
+  "page": 32,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Initiate of High Sorcery (lunitari) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "initiate-of-high-sorcery-lunitari"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "dsotdq_adept-of-the-white-robes",
+  "name": "Adept of the White Robes",
+  "source": "DSotDQ",
+  "sourceName": "Dragonlance: Shadow of the Dragon Queen",
+  "page": 32,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Initiate of High Sorcery (solinari) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "initiate-of-high-sorcery-solinari"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "dsotdq_divinely-favored",
+  "name": "Divinely Favored",
+  "source": "DSotDQ",
+  "sourceName": "Dragonlance: Shadow of the Dragon Queen",
+  "page": 32,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Dragonlance campaign",
+  "pre": [
+   {
+    "level": 4,
+    "campaign": [
+     "Dragonlance"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "dsotdq_initiate-of-high-sorcery",
+  "name": "Initiate of High Sorcery",
+  "source": "DSotDQ",
+  "sourceName": "Dragonlance: Shadow of the Dragon Queen",
+  "page": 32,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Sorcerer level 1+, Dragonlance campaign or Wizard level 1+, Dragonlance campaign or Mage of High Sorcery background, Dragonlance campaign",
+  "pre": [
+   {
+    "level": 1,
+    "cls": "sorcerer",
+    "campaign": [
+     "Dragonlance"
+    ]
+   },
+   {
+    "level": 1,
+    "cls": "wizard",
+    "campaign": [
+     "Dragonlance"
+    ]
+   },
+   {
+    "background": [
+     "mage of high sorcery"
+    ],
+    "campaign": [
+     "Dragonlance"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "dsotdq_knight-of-the-crown",
+  "name": "Knight of the Crown",
+  "source": "DSotDQ",
+  "sourceName": "Dragonlance: Shadow of the Dragon Queen",
+  "page": 32,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Squire of Solamnia feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "squire-of-solamnia"
+    ]
+   }
+  ],
+  "ability": "Str or Dex or Con +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "dsotdq_knight-of-the-rose",
+  "name": "Knight of the Rose",
+  "source": "DSotDQ",
+  "sourceName": "Dragonlance: Shadow of the Dragon Queen",
+  "page": 33,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Squire of Solamnia feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "squire-of-solamnia"
+    ]
+   }
+  ],
+  "ability": "Con or Wis or Cha +1",
+  "abilities": [
+   "con",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "dsotdq_knight-of-the-sword",
+  "name": "Knight of the Sword",
+  "source": "DSotDQ",
+  "sourceName": "Dragonlance: Shadow of the Dragon Queen",
+  "page": 33,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Squire of Solamnia feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "squire-of-solamnia"
+    ]
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "dsotdq_squire-of-solamnia",
+  "name": "Squire of Solamnia",
+  "source": "DSotDQ",
+  "sourceName": "Dragonlance: Shadow of the Dragon Queen",
+  "page": 34,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Fighter level 1+, Dragonlance campaign or Paladin level 1+, Dragonlance campaign or Knight of Solamnia background, Dragonlance campaign",
+  "pre": [
+   {
+    "level": 1,
+    "cls": "fighter",
+    "campaign": [
+     "Dragonlance"
+    ]
+   },
+   {
+    "level": 1,
+    "cls": "paladin",
+    "campaign": [
+     "Dragonlance"
+    ]
+   },
+   {
+    "background": [
+     "knight of solamnia"
+    ],
+    "campaign": [
+     "Dragonlance"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_aberrant-dragonmark",
+  "name": "Aberrant Dragonmark",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 39,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_boon-of-siberys",
+  "name": "Boon of Siberys",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 45,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+, Eberron campaign",
+  "pre": [
+   {
+    "level": 19,
+    "campaign": [
+     "Eberron"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-aberrant-mark",
+  "name": "Greater Aberrant Mark",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 43,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Aberrant Dragonmark feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "aberrant-dragonmark"
+    ]
+   }
+  ],
+  "ability": "Con +1",
+  "abilities": [
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-detection",
+  "name": "Greater Mark of Detection",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 43,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Detection feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-detection"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-finding",
+  "name": "Greater Mark of Finding",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 43,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Finding feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-finding"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-handling",
+  "name": "Greater Mark of Handling",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 43,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Handling feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-handling"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-healing",
+  "name": "Greater Mark of Healing",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 44,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Healing feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-healing"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-hospitality",
+  "name": "Greater Mark of Hospitality",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 44,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Hospitality feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-hospitality"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-making",
+  "name": "Greater Mark of Making",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 44,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Making feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-making"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-passage",
+  "name": "Greater Mark of Passage",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 44,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Passage feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-passage"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-scribing",
+  "name": "Greater Mark of Scribing",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 44,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Scribing feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-scribing"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-sentinel",
+  "name": "Greater Mark of Sentinel",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 44,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Sentinel feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-sentinel"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-shadow",
+  "name": "Greater Mark of Shadow",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 45,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Shadow feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-shadow"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-storm",
+  "name": "Greater Mark of Storm",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 45,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Storm feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-storm"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_greater-mark-of-warding",
+  "name": "Greater Mark of Warding",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 45,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Mark of Warding feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "mark-of-warding"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-detection",
+  "name": "Mark of Detection",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 39,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-finding",
+  "name": "Mark of Finding",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 39,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-handling",
+  "name": "Mark of Handling",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 39,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-healing",
+  "name": "Mark of Healing",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 40,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-hospitality",
+  "name": "Mark of Hospitality",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 40,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-making",
+  "name": "Mark of Making",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 40,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-passage",
+  "name": "Mark of Passage",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 41,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-scribing",
+  "name": "Mark of Scribing",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 41,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-sentinel",
+  "name": "Mark of Sentinel",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 41,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-shadow",
+  "name": "Mark of Shadow",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 42,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-storm",
+  "name": "Mark of Storm",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 42,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_mark-of-warding",
+  "name": "Mark of Warding",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 42,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dragonmark",
+  "prereq": "Eberron campaign, No other Dragonmark feat",
+  "pre": [
+   {
+    "campaign": [
+     "Eberron"
+    ],
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "efa_potent-dragonmark",
+  "name": "Potent Dragonmark",
+  "source": "EFA",
+  "sourceName": "Eberron: Forge of the Artificer",
+  "page": 45,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, A Dragonmark feat",
+  "pre": [
+   {
+    "level": 4,
+    "other": 1
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "erlw_aberrant-dragonmark",
+  "name": "Aberrant Dragonmark",
+  "source": "ERLW",
+  "sourceName": "Eberron: Rising from the Last War",
+  "page": 52,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "No other dragonmark",
+  "pre": [
+   {
+    "other": 1
+   }
+  ],
+  "ability": "Con +1",
+  "abilities": [
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "erlw_revenant-blade",
+  "name": "Revenant Blade",
+  "source": "ERLW",
+  "sourceName": "Eberron: Rising from the Last War",
+  "page": 22,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Elf",
+  "pre": [
+   {
+    "race": [
+     "elf"
+    ]
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "ftd_gift-of-the-chromatic-dragon",
+  "name": "Gift of the Chromatic Dragon",
+  "source": "FTD",
+  "sourceName": "Fizban's Treasury of Dragons",
+  "page": 17,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "ftd_gift-of-the-gem-dragon",
+  "name": "Gift of the Gem Dragon",
+  "source": "FTD",
+  "sourceName": "Fizban's Treasury of Dragons",
+  "page": 17,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "ftd_gift-of-the-metallic-dragon",
+  "name": "Gift of the Metallic Dragon",
+  "source": "FTD",
+  "sourceName": "Fizban's Treasury of Dragons",
+  "page": 17,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-bloodshed",
+  "name": "Boon of Bloodshed",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 42,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-bountiful-health",
+  "name": "Boon of Bountiful Health",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 42,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-communication",
+  "name": "Boon of Communication",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 42,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-desperate-resilience",
+  "name": "Boon of Desperate Resilience",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 42,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "Str or Con +1",
+  "abilities": [
+   "str",
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-exquisite-radiance",
+  "name": "Boon of Exquisite Radiance",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 42,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-fluid-forms",
+  "name": "Boon of Fluid Forms",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 42,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-fortunes-favor",
+  "name": "Boon of Fortune's Favor",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 43,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-poison-mastery",
+  "name": "Boon of Poison Mastery",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 43,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-revelry",
+  "name": "Boon of Revelry",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 43,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-terror",
+  "name": "Boon of Terror",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 43,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "Cha +1",
+  "abilities": [
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-the-bright-sun",
+  "name": "Boon of the Bright Sun",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 43,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "Con or Wis or Cha +1",
+  "abilities": [
+   "con",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-the-furious-storm",
+  "name": "Boon of the Furious Storm",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 43,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 19,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_boon-of-the-soul-drinker",
+  "name": "Boon of the Soul Drinker",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 43,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_cold-caster",
+  "name": "Cold Caster",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 39,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_cult-of-the-dragon-initiate",
+  "name": "Cult of the Dragon Initiate",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 37,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_dragonscarred",
+  "name": "Dragonscarred",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 39,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Cult of the Dragon Initiate feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "cult-of-the-dragon-initiate"
+    ]
+   }
+  ],
+  "ability": "Con or Cha +1",
+  "abilities": [
+   "con",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_emerald-enclave-fledgling",
+  "name": "Emerald Enclave Fledgling",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 37,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_enclave-magic",
+  "name": "Enclave Magic",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 39,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Emerald Enclave Fledgling feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "emerald-enclave-fledgling"
+    ]
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_fairy-trickster",
+  "name": "Fairy Trickster",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 39,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Dex or Cha +1",
+  "abilities": [
+   "dex",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_genie-magic",
+  "name": "Genie Magic",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 39,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_harper-agent",
+  "name": "Harper Agent",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 37,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_harper-teamwork",
+  "name": "Harper Teamwork",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 39,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Harper Agent feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "harper-agent"
+    ]
+   }
+  ],
+  "ability": "Dex or Cha +1",
+  "abilities": [
+   "dex",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_lordly-resolve",
+  "name": "Lordly Resolve",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 40,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Lords' Alliance Agent feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "lords-alliance-agent"
+    ]
+   }
+  ],
+  "ability": "Str or Cha +1",
+  "abilities": [
+   "str",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_lords-alliance-agent",
+  "name": "Lords' Alliance Agent",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 38,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_mythal-touched",
+  "name": "Mythal Touched",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 40,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_orders-resilience",
+  "name": "Order's Resilience",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 40,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Tyro of the Gauntlet feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "tyro-of-the-gauntlet"
+    ]
+   }
+  ],
+  "ability": "Str or Wis or Cha +1",
+  "abilities": [
+   "str",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_purple-dragon-commandant",
+  "name": "Purple Dragon Commandant",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 40,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Purple Dragon Rook feat or Martial weapon proficiency",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "purple-dragon-rook"
+    ]
+   },
+   {
+    "weapon": "martial"
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_purple-dragon-rook",
+  "name": "Purple Dragon Rook",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 38,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_spellfire-adept",
+  "name": "Spellfire Adept",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 41,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Spellfire Spark feat or Spellcasting feature or Pact Magic feature",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "spellfire-spark"
+    ]
+   },
+   {
+    "level": 4,
+    "feature": [
+     "spellcasting",
+     "pact magic"
+    ]
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_spellfire-spark",
+  "name": "Spellfire Spark",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 38,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_street-justice",
+  "name": "Street Justice",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 41,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_tyro-of-the-gauntlet",
+  "name": "Tyro of the Gauntlet",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 38,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_zhentarim-ruffian",
+  "name": "Zhentarim Ruffian",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 38,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "frhof_zhentarim-tactics",
+  "name": "Zhentarim Tactics",
+  "source": "FRHoF",
+  "sourceName": "Forgotten Realms: Heroes of Faerûn",
+  "page": 41,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Zhentarim Ruffian feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "zhentarim-ruffian"
+    ]
+   }
+  ],
+  "ability": "Dex or Cha +1",
+  "abilities": [
+   "dex",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "mtf_svirfneblin-magic",
+  "name": "Svirfneblin Magic",
+  "source": "MTF",
+  "sourceName": "Mordenkainen's Tome of Foes",
+  "page": 114,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Gnome (Deep)",
+  "pre": [
+   {
+    "race": [
+     "gnome|deep"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_actor",
+  "name": "Actor",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 165,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Cha +1",
+  "abilities": [
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_alert",
+  "name": "Alert",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 165,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_athlete",
+  "name": "Athlete",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 165,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_charger",
+  "name": "Charger",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 165,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_crossbow-expert",
+  "name": "Crossbow Expert",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 165,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_defensive-duelist",
+  "name": "Defensive Duelist",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 165,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Dexterity 13+",
+  "pre": [
+   {
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_dual-wielder",
+  "name": "Dual Wielder",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 165,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_dungeon-delver",
+  "name": "Dungeon Delver",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 166,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_durable",
+  "name": "Durable",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 166,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Con +1",
+  "abilities": [
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_elemental-adept",
+  "name": "Elemental Adept",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 166,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Can cast at least one spell",
+  "pre": [
+   {
+    "cast": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": true
+ },
+ {
+  "id": "phb_grappler",
+  "name": "Grappler",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 167,
+  "edition": "2014",
+  "inSrd": true,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Strength 13+",
+  "pre": [
+   {
+    "ab": [
+     {
+      "str": 13
+     }
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_great-weapon-master",
+  "name": "Great Weapon Master",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 167,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_healer",
+  "name": "Healer",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 167,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_heavily-armored",
+  "name": "Heavily Armored",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 167,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Medium armor training",
+  "pre": [
+   {
+    "armor": "medium"
+   }
+  ],
+  "ability": "Str +1",
+  "abilities": [
+   "str"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_heavy-armor-master",
+  "name": "Heavy Armor Master",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 167,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Heavy armor training",
+  "pre": [
+   {
+    "armor": "heavy"
+   }
+  ],
+  "ability": "Str +1",
+  "abilities": [
+   "str"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_inspiring-leader",
+  "name": "Inspiring Leader",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 167,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Charisma 13+",
+  "pre": [
+   {
+    "ab": [
+     {
+      "cha": 13
+     }
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_keen-mind",
+  "name": "Keen Mind",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 167,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Int +1",
+  "abilities": [
+   "int"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_lightly-armored",
+  "name": "Lightly Armored",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 167,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_linguist",
+  "name": "Linguist",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 167,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Int +1",
+  "abilities": [
+   "int"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_lucky",
+  "name": "Lucky",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 167,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_mage-slayer",
+  "name": "Mage Slayer",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 168,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_magic-initiate",
+  "name": "Magic Initiate",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 168,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_martial-adept",
+  "name": "Martial Adept",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 168,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_medium-armor-master",
+  "name": "Medium Armor Master",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 168,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Medium armor training",
+  "pre": [
+   {
+    "armor": "medium"
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_mobile",
+  "name": "Mobile",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 168,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_moderately-armored",
+  "name": "Moderately Armored",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 168,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Light armor training",
+  "pre": [
+   {
+    "armor": "light"
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_mounted-combatant",
+  "name": "Mounted Combatant",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 168,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_observant",
+  "name": "Observant",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 168,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Int or Wis +1",
+  "abilities": [
+   "int",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_polearm-master",
+  "name": "Polearm Master",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 168,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_resilient",
+  "name": "Resilient",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 168,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_ritual-caster",
+  "name": "Ritual Caster",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 169,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Intelligence 13+ or Wisdom 13+",
+  "pre": [
+   {
+    "ab": [
+     {
+      "int": 13
+     },
+     {
+      "wis": 13
+     }
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_savage-attacker",
+  "name": "Savage Attacker",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 169,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_sentinel",
+  "name": "Sentinel",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 169,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_sharpshooter",
+  "name": "Sharpshooter",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 170,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_shield-master",
+  "name": "Shield Master",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 170,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_skilled",
+  "name": "Skilled",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 170,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_skulker",
+  "name": "Skulker",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 170,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Dexterity 13+",
+  "pre": [
+   {
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_spell-sniper",
+  "name": "Spell Sniper",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 170,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Can cast at least one spell",
+  "pre": [
+   {
+    "cast": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_tavern-brawler",
+  "name": "Tavern Brawler",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 170,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Str or Con +1",
+  "abilities": [
+   "str",
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "phb_tough",
+  "name": "Tough",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 170,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_war-caster",
+  "name": "War Caster",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 170,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Can cast at least one spell",
+  "pre": [
+   {
+    "cast": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "phb_weapon-master",
+  "name": "Weapon Master",
+  "source": "PHB",
+  "sourceName": "Player's Handbook (2014)",
+  "page": 170,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_ability-score-improvement",
+  "name": "Ability Score Improvement",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 202,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "any +2 or +1 to 2 of any",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": true
+ },
+ {
+  "id": "xphb_actor",
+  "name": "Actor",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 202,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Charisma 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "cha": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Cha +1",
+  "abilities": [
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_alert",
+  "name": "Alert",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 200,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_archery",
+  "name": "Archery",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 209,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Fighting Style feature",
+  "pre": [
+   {
+    "feature": [
+     "fighting style"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_athlete",
+  "name": "Athlete",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 202,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strength 13+ or Dexterity 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "str": 13
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_blessed-warrior",
+  "name": "Blessed Warrior",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 110,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Special",
+  "pre": [
+   {
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_blind-fighting",
+  "name": "Blind Fighting",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 209,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Fighting Style feature",
+  "pre": [
+   {
+    "feature": [
+     "fighting style"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-combat-prowess",
+  "name": "Boon of Combat Prowess",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 210,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-dimensional-travel",
+  "name": "Boon of Dimensional Travel",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 210,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-energy-resistance",
+  "name": "Boon of Energy Resistance",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 210,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-fate",
+  "name": "Boon of Fate",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 210,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-fortitude",
+  "name": "Boon of Fortitude",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 210,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-irresistible-offense",
+  "name": "Boon of Irresistible Offense",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 211,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-recovery",
+  "name": "Boon of Recovery",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 211,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-skill",
+  "name": "Boon of Skill",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 211,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-speed",
+  "name": "Boon of Speed",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 211,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-spell-recall",
+  "name": "Boon of Spell Recall",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 211,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 19,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-truesight",
+  "name": "Boon of Truesight",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 211,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_boon-of-the-night-spirit",
+  "name": "Boon of the Night Spirit",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 211,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Epic Boon",
+  "prereq": "Level 19+",
+  "pre": [
+   {
+    "level": 19
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_charger",
+  "name": "Charger",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 202,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strength 13+ or Dexterity 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "str": 13
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_chef",
+  "name": "Chef",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 202,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Con or Wis +1",
+  "abilities": [
+   "con",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_crafter",
+  "name": "Crafter",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 200,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_crossbow-expert",
+  "name": "Crossbow Expert",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 203,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Dexterity 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Dex +1",
+  "abilities": [
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_crusher",
+  "name": "Crusher",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 203,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Str or Con +1",
+  "abilities": [
+   "str",
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_defense",
+  "name": "Defense",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 209,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Fighting Style feature",
+  "pre": [
+   {
+    "feature": [
+     "fighting style"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_defensive-duelist",
+  "name": "Defensive Duelist",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 203,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Dexterity 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Dex +1",
+  "abilities": [
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_druidic-warrior",
+  "name": "Druidic Warrior",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 120,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Special",
+  "pre": [
+   {
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_dual-wielder",
+  "name": "Dual Wielder",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 203,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strength 13+ or Dexterity 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "str": 13
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_dueling",
+  "name": "Dueling",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 209,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Fighting Style feature",
+  "pre": [
+   {
+    "feature": [
+     "fighting style"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_durable",
+  "name": "Durable",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 203,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Con +1",
+  "abilities": [
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_elemental-adept",
+  "name": "Elemental Adept",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 203,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": true
+ },
+ {
+  "id": "xphb_fey-touched",
+  "name": "Fey-Touched",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 204,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_grappler",
+  "name": "Grappler",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 204,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strength 13+ or Dexterity 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "str": 13
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_great-weapon-fighting",
+  "name": "Great Weapon Fighting",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 209,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Fighting Style feature",
+  "pre": [
+   {
+    "feature": [
+     "fighting style"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_great-weapon-master",
+  "name": "Great Weapon Master",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 204,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strength 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "str": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Str +1",
+  "abilities": [
+   "str"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_healer",
+  "name": "Healer",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 201,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_heavily-armored",
+  "name": "Heavily Armored",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 204,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Medium armor training",
+  "pre": [
+   {
+    "level": 4,
+    "armor": "medium"
+   }
+  ],
+  "ability": "Con or Str +1",
+  "abilities": [
+   "str",
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_heavy-armor-master",
+  "name": "Heavy Armor Master",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 204,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Heavy armor training",
+  "pre": [
+   {
+    "level": 4,
+    "armor": "heavy"
+   }
+  ],
+  "ability": "Con or Str +1",
+  "abilities": [
+   "str",
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_inspiring-leader",
+  "name": "Inspiring Leader",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 204,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Wisdom 13+ or Charisma 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "wis": 13
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "ab": [
+     {
+      "cha": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Wis or Cha +1",
+  "abilities": [
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_interception",
+  "name": "Interception",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 209,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Fighting Style feature",
+  "pre": [
+   {
+    "feature": [
+     "fighting style"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_keen-mind",
+  "name": "Keen Mind",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 205,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Intelligence 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "int": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Int +1",
+  "abilities": [
+   "int"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_lightly-armored",
+  "name": "Lightly Armored",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 205,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_lucky",
+  "name": "Lucky",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 201,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_mage-slayer",
+  "name": "Mage Slayer",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 205,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_magic-initiate",
+  "name": "Magic Initiate",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 201,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": true
+ },
+ {
+  "id": "xphb_martial-weapon-training",
+  "name": "Martial Weapon Training",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 205,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_medium-armor-master",
+  "name": "Medium Armor Master",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 205,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Medium armor training",
+  "pre": [
+   {
+    "level": 4,
+    "armor": "medium"
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_moderately-armored",
+  "name": "Moderately Armored",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 205,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Light armor training",
+  "pre": [
+   {
+    "level": 4,
+    "armor": "light"
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_mounted-combatant",
+  "name": "Mounted Combatant",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 205,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Str or Dex or Wis +1",
+  "abilities": [
+   "str",
+   "dex",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_musician",
+  "name": "Musician",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 201,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_observant",
+  "name": "Observant",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 205,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Intelligence 13+ or Wisdom 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "int": 13
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "ab": [
+     {
+      "wis": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Int or Wis +1",
+  "abilities": [
+   "int",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_piercer",
+  "name": "Piercer",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 206,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_poisoner",
+  "name": "Poisoner",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 206,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Dex or Int +1",
+  "abilities": [
+   "dex",
+   "int"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_polearm-master",
+  "name": "Polearm Master",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 206,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strength 13+ or Dexterity 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "str": 13
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Dex or Str +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_protection",
+  "name": "Protection",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 209,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Fighting Style feature",
+  "pre": [
+   {
+    "feature": [
+     "fighting style"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_resilient",
+  "name": "Resilient",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 206,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_ritual-caster",
+  "name": "Ritual Caster",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 206,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Intelligence 13+ or Wisdom 13+ or Charisma 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "int": 13
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "ab": [
+     {
+      "wis": 13
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "ab": [
+     {
+      "cha": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_savage-attacker",
+  "name": "Savage Attacker",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 201,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_sentinel",
+  "name": "Sentinel",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 207,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strength 13+ or Dexterity 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "str": 13
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_shadow-touched",
+  "name": "Shadow-Touched",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 207,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_sharpshooter",
+  "name": "Sharpshooter",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 207,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Dexterity 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Dex +1",
+  "abilities": [
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_shield-master",
+  "name": "Shield Master",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 207,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Shield training",
+  "pre": [
+   {
+    "level": 4,
+    "armor": "shield"
+   }
+  ],
+  "ability": "Str +1",
+  "abilities": [
+   "str"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_skill-expert",
+  "name": "Skill Expert",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 207,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_skilled",
+  "name": "Skilled",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 201,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": true
+ },
+ {
+  "id": "xphb_skulker",
+  "name": "Skulker",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 208,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Dexterity 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Dex +1",
+  "abilities": [
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_slasher",
+  "name": "Slasher",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 208,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_speedy",
+  "name": "Speedy",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 208,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Dexterity 13+ or Constitution 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "ab": [
+     {
+      "con": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Dex or Con +1",
+  "abilities": [
+   "dex",
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_spell-sniper",
+  "name": "Spell Sniper",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 208,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_tavern-brawler",
+  "name": "Tavern Brawler",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 202,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_telekinetic",
+  "name": "Telekinetic",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 208,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_telepathic",
+  "name": "Telepathic",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 208,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_thrown-weapon-fighting",
+  "name": "Thrown Weapon Fighting",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 210,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Fighting Style feature",
+  "pre": [
+   {
+    "feature": [
+     "fighting style"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_tough",
+  "name": "Tough",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 202,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_two-weapon-fighting",
+  "name": "Two-Weapon Fighting",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 210,
+  "edition": "2024",
+  "inSrd": true,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Fighting Style feature",
+  "pre": [
+   {
+    "feature": [
+     "fighting style"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_unarmed-fighting",
+  "name": "Unarmed Fighting",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 210,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Fighting Style feature",
+  "pre": [
+   {
+    "feature": [
+     "fighting style"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_war-caster",
+  "name": "War Caster",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 209,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Can cast at least one spell",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xphb_weapon-master",
+  "name": "Weapon Master",
+  "source": "XPHB",
+  "sourceName": "Player's Handbook (2024)",
+  "page": 209,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "rhw_aberrant-anatomy",
+  "name": "Aberrant Anatomy",
+  "source": "RHW",
+  "sourceName": "Ravenloft: The Horrors Within",
+  "page": 32,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dark Gift",
+  "prereq": "Ravenloft campaign",
+  "pre": [
+   {
+    "campaign": [
+     "Ravenloft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "rhw_echoing-soul",
+  "name": "Echoing Soul",
+  "source": "RHW",
+  "sourceName": "Ravenloft: The Horrors Within",
+  "page": 33,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dark Gift",
+  "prereq": "Ravenloft campaign",
+  "pre": [
+   {
+    "campaign": [
+     "Ravenloft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "rhw_gathered-whispers",
+  "name": "Gathered Whispers",
+  "source": "RHW",
+  "sourceName": "Ravenloft: The Horrors Within",
+  "page": 33,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dark Gift",
+  "prereq": "Ravenloft campaign",
+  "pre": [
+   {
+    "campaign": [
+     "Ravenloft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "rhw_living-shadow",
+  "name": "Living Shadow",
+  "source": "RHW",
+  "sourceName": "Ravenloft: The Horrors Within",
+  "page": 33,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dark Gift",
+  "prereq": "Ravenloft campaign",
+  "pre": [
+   {
+    "campaign": [
+     "Ravenloft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "rhw_mist-walker",
+  "name": "Mist Walker",
+  "source": "RHW",
+  "sourceName": "Ravenloft: The Horrors Within",
+  "page": 34,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dark Gift",
+  "prereq": "Ravenloft campaign",
+  "pre": [
+   {
+    "campaign": [
+     "Ravenloft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "rhw_second-skin",
+  "name": "Second Skin",
+  "source": "RHW",
+  "sourceName": "Ravenloft: The Horrors Within",
+  "page": 34,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dark Gift",
+  "prereq": "Ravenloft campaign",
+  "pre": [
+   {
+    "campaign": [
+     "Ravenloft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "rhw_sharp-eye",
+  "name": "Sharp Eye",
+  "source": "RHW",
+  "sourceName": "Ravenloft: The Horrors Within",
+  "page": 32,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "rhw_survivor",
+  "name": "Survivor",
+  "source": "RHW",
+  "sourceName": "Ravenloft: The Horrors Within",
+  "page": 32,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "rhw_symbiotic-being",
+  "name": "Symbiotic Being",
+  "source": "RHW",
+  "sourceName": "Ravenloft: The Horrors Within",
+  "page": 34,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dark Gift",
+  "prereq": "Ravenloft campaign",
+  "pre": [
+   {
+    "campaign": [
+     "Ravenloft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "rhw_touch-of-death",
+  "name": "Touch of Death",
+  "source": "RHW",
+  "sourceName": "Ravenloft: The Horrors Within",
+  "page": 35,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dark Gift",
+  "prereq": "Ravenloft campaign",
+  "pre": [
+   {
+    "campaign": [
+     "Ravenloft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "rhw_watchers",
+  "name": "Watchers",
+  "source": "RHW",
+  "sourceName": "Ravenloft: The Horrors Within",
+  "page": 35,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Dark Gift",
+  "prereq": "Ravenloft campaign",
+  "pre": [
+   {
+    "campaign": [
+     "Ravenloft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "sato_agent-of-order",
+  "name": "Agent of Order",
+  "source": "SatO",
+  "sourceName": "Sigil and the Outlands",
+  "page": 10,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Scion of the Outer Planes (lawful Outer Plane) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "scion-of-the-outer-planes-lawful-outer-plane"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "sato_baleful-scion",
+  "name": "Baleful Scion",
+  "source": "SatO",
+  "sourceName": "Sigil and the Outlands",
+  "page": 10,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Scion of the Outer Planes (evil Outer Plane) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "scion-of-the-outer-planes-evil-outer-plane"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "sato_cohort-of-chaos",
+  "name": "Cohort of Chaos",
+  "source": "SatO",
+  "sourceName": "Sigil and the Outlands",
+  "page": 10,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Scion of the Outer Planes (chaotic Outer Plane) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "scion-of-the-outer-planes-chaotic-outer-plane"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "sato_outlands-envoy",
+  "name": "Outlands Envoy",
+  "source": "SatO",
+  "sourceName": "Sigil and the Outlands",
+  "page": 10,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Scion of the Outer Planes (the Outlands) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "scion-of-the-outer-planes-the-outlands"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "sato_planar-wanderer",
+  "name": "Planar Wanderer",
+  "source": "SatO",
+  "sourceName": "Sigil and the Outlands",
+  "page": 11,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Scion of the Outer Planes feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "scion-of-the-outer-planes"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "sato_righteous-heritor",
+  "name": "Righteous Heritor",
+  "source": "SatO",
+  "sourceName": "Sigil and the Outlands",
+  "page": 11,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Scion of the Outer Planes (good Outer Plane) feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "scion-of-the-outer-planes-good-outer-plane"
+    ]
+   }
+  ],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "sato_scion-of-the-outer-planes",
+  "name": "Scion of the Outer Planes",
+  "source": "SatO",
+  "sourceName": "Sigil and the Outlands",
+  "page": 12,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Planescape campaign",
+  "pre": [
+   {
+    "campaign": [
+     "Planescape"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "scc_strixhaven-initiate",
+  "name": "Strixhaven Initiate",
+  "source": "SCC",
+  "sourceName": "Strixhaven: A Curriculum of Chaos",
+  "page": 36,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "scc_strixhaven-mascot",
+  "name": "Strixhaven Mascot",
+  "source": "SCC",
+  "sourceName": "Strixhaven: A Curriculum of Chaos",
+  "page": 37,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Strixhaven Initiate feat",
+  "pre": [
+   {
+    "level": 4,
+    "feat": [
+     "strixhaven-initiate"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "tce_artificer-initiate",
+  "name": "Artificer Initiate",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 79,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "tce_chef",
+  "name": "Chef",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 79,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Con or Wis +1",
+  "abilities": [
+   "con",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "tce_crusher",
+  "name": "Crusher",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 79,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Str or Con +1",
+  "abilities": [
+   "str",
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "tce_eldritch-adept",
+  "name": "Eldritch Adept",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 79,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Can cast at least one spell",
+  "pre": [
+   {
+    "cast": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "tce_fey-touched",
+  "name": "Fey Touched",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 79,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "tce_fighting-initiate",
+  "name": "Fighting Initiate",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 80,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Martial weapon proficiency",
+  "pre": [
+   {
+    "weapon": "martial"
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "tce_gunner",
+  "name": "Gunner",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 80,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Dex +1",
+  "abilities": [
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "tce_metamagic-adept",
+  "name": "Metamagic Adept",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 80,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Can cast at least one spell",
+  "pre": [
+   {
+    "cast": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "tce_piercer",
+  "name": "Piercer",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 80,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "tce_poisoner",
+  "name": "Poisoner",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 80,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "tce_shadow-touched",
+  "name": "Shadow Touched",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 80,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "tce_skill-expert",
+  "name": "Skill Expert",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 80,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "any +1",
+  "abilities": [
+   "str",
+   "dex",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "tce_slasher",
+  "name": "Slasher",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 81,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "tce_telekinetic",
+  "name": "Telekinetic",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 81,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "tce_telepathic",
+  "name": "Telepathic",
+  "source": "TCE",
+  "sourceName": "Tasha's Cauldron of Everything",
+  "page": 81,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": null,
+  "pre": [],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "bmt_cartomancer",
+  "name": "Cartomancer",
+  "source": "BMT",
+  "sourceName": "The Book of Many Things",
+  "page": 49,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Spellcasting or Pact Magic feature",
+  "pre": [
+   {
+    "level": 4,
+    "cast": 2
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "wow_arathi-heritage",
+  "name": "Arathi Heritage",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 85,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": "Human, World of Warcraft campaign",
+  "pre": [
+   {
+    "race": [
+     "human"
+    ],
+    "campaign": [
+     "World of Warcraft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "wow_child-of-the-sea",
+  "name": "Child of the Sea",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 85,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": "Human, World of Warcraft campaign",
+  "pre": [
+   {
+    "race": [
+     "human"
+    ],
+    "campaign": [
+     "World of Warcraft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "wow_clearcasting",
+  "name": "Clearcasting",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 40,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Int +1",
+  "abilities": [
+   "int"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "wow_elusive-brawler",
+  "name": "Elusive Brawler",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 45,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Dexterity 13+ and Wisdom 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13,
+      "wis": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Dex or Wis +1",
+  "abilities": [
+   "dex",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "wow_enveloping-mist",
+  "name": "Enveloping Mist",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 45,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Dexterity 13+ and Wisdom 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13,
+      "wis": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Dex or Wis +1",
+  "abilities": [
+   "dex",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "wow_fingers-of-frost",
+  "name": "Fingers of Frost",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 40,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Int +1",
+  "abilities": [
+   "int"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "wow_fists-of-fury",
+  "name": "Fists of Fury",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 45,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Dexterity 13+ and Wisdom 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13,
+      "wis": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Dex or Wis +1",
+  "abilities": [
+   "dex",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "wow_hot-streak",
+  "name": "Hot Streak",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 41,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+",
+  "pre": [
+   {
+    "level": 4
+   }
+  ],
+  "ability": "Int +1",
+  "abilities": [
+   "int"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "wow_inscription-adept",
+  "name": "Inscription Adept",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 101,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Calligrapher's Supplies proficiency or Cartographer's Tools proficiency or Painter's Supplies proficiency",
+  "pre": [
+   {
+    "level": 4,
+    "other": 1
+   }
+  ],
+  "ability": "Int or Wis or Cha +1",
+  "abilities": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "wow_stagger-and-sway",
+  "name": "Stagger and Sway",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 45,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "General",
+  "prereq": "Level 4+, Dexterity 13+ and Wisdom 13+",
+  "pre": [
+   {
+    "level": 4,
+    "ab": [
+     {
+      "dex": 13,
+      "wis": 13
+     }
+    ]
+   }
+  ],
+  "ability": "Dex or Wis +1",
+  "abilities": [
+   "dex",
+   "wis"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "wow_void-warrior",
+  "name": "Void Warrior",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 18,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Fighting Style",
+  "prereq": "Special",
+  "pre": [
+   {
+    "other": 1
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "wow_will-to-survive",
+  "name": "Will to Survive",
+  "source": "WoW",
+  "sourceName": "World of Warcraft",
+  "page": 85,
+  "edition": "2024",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Origin",
+  "prereq": "Human, World of Warcraft campaign",
+  "pre": [
+   {
+    "race": [
+     "human"
+    ],
+    "campaign": [
+     "World of Warcraft"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xge_bountiful-luck",
+  "name": "Bountiful Luck",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 73,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Halfling",
+  "pre": [
+   {
+    "race": [
+     "halfling"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xge_dragon-fear",
+  "name": "Dragon Fear",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 74,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Dragonborn",
+  "pre": [
+   {
+    "race": [
+     "dragonborn"
+    ]
+   }
+  ],
+  "ability": "Str or Con or Cha +1",
+  "abilities": [
+   "str",
+   "con",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xge_dragon-hide",
+  "name": "Dragon Hide",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 74,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Dragonborn",
+  "pre": [
+   {
+    "race": [
+     "dragonborn"
+    ]
+   }
+  ],
+  "ability": "Str or Con or Cha +1",
+  "abilities": [
+   "str",
+   "con",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xge_drow-high-magic",
+  "name": "Drow High Magic",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 74,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Elf (Drow)",
+  "pre": [
+   {
+    "race": [
+     "elf|drow"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xge_dwarven-fortitude",
+  "name": "Dwarven Fortitude",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 74,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Dwarf",
+  "pre": [
+   {
+    "race": [
+     "dwarf"
+    ]
+   }
+  ],
+  "ability": "Con +1",
+  "abilities": [
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xge_elven-accuracy",
+  "name": "Elven Accuracy",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 74,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Elf or Half-elf",
+  "pre": [
+   {
+    "race": [
+     "elf",
+     "half-elf"
+    ]
+   }
+  ],
+  "ability": "Dex or Int or Wis or Cha +1",
+  "abilities": [
+   "dex",
+   "int",
+   "wis",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xge_fade-away",
+  "name": "Fade Away",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 74,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Gnome",
+  "pre": [
+   {
+    "race": [
+     "gnome"
+    ]
+   }
+  ],
+  "ability": "Dex or Int +1",
+  "abilities": [
+   "dex",
+   "int"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xge_fey-teleportation",
+  "name": "Fey Teleportation",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 74,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Elf (High)",
+  "pre": [
+   {
+    "race": [
+     "elf|high"
+    ]
+   }
+  ],
+  "ability": "Int or Cha +1",
+  "abilities": [
+   "int",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xge_flames-of-phlegethos",
+  "name": "Flames of Phlegethos",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 74,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Tiefling",
+  "pre": [
+   {
+    "race": [
+     "tiefling"
+    ]
+   }
+  ],
+  "ability": "Int or Cha +1",
+  "abilities": [
+   "int",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xge_infernal-constitution",
+  "name": "Infernal Constitution",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 75,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Tiefling",
+  "pre": [
+   {
+    "race": [
+     "tiefling"
+    ]
+   }
+  ],
+  "ability": "Con +1",
+  "abilities": [
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xge_orcish-fury",
+  "name": "Orcish Fury",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 75,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Half-orc",
+  "pre": [
+   {
+    "race": [
+     "half-orc"
+    ]
+   }
+  ],
+  "ability": "Str or Con +1",
+  "abilities": [
+   "str",
+   "con"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xge_prodigy",
+  "name": "Prodigy",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 75,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Half-elf or Half-orc or Human",
+  "pre": [
+   {
+    "race": [
+     "half-elf",
+     "half-orc",
+     "human"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ },
+ {
+  "id": "xge_second-chance",
+  "name": "Second Chance",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 75,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Halfling",
+  "pre": [
+   {
+    "race": [
+     "halfling"
+    ]
+   }
+  ],
+  "ability": "Dex or Con or Cha +1",
+  "abilities": [
+   "dex",
+   "con",
+   "cha"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xge_squat-nimbleness",
+  "name": "Squat Nimbleness",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 75,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Dwarf or a Small race",
+  "pre": [
+   {
+    "race": [
+     "dwarf",
+     "small race"
+    ]
+   }
+  ],
+  "ability": "Str or Dex +1",
+  "abilities": [
+   "str",
+   "dex"
+  ],
+  "repeatable": false
+ },
+ {
+  "id": "xge_wood-elf-magic",
+  "name": "Wood Elf Magic",
+  "source": "XGE",
+  "sourceName": "Xanathar's Guide to Everything",
+  "page": 75,
+  "edition": "2014",
+  "inSrd": false,
+  "srdName": null,
+  "category": "Racial",
+  "prereq": "Elf (Wood)",
+  "pre": [
+   {
+    "race": [
+     "elf|wood"
+    ]
+   }
+  ],
+  "ability": null,
+  "abilities": [],
+  "repeatable": false
+ }
+]
